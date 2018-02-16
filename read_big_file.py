@@ -1,7 +1,9 @@
 
 '''
 The code below was run in a Jupyter notebook on an i7 quad core windows PC 
-with 16MB of RAM. The input file was 24 Gbytes in size with approx 335 Million records
+with 16GB of RAM. 
+
+The input file was 24 Gbytes in size with approx 335 Million records
 '''
 
 from itertools import islice
@@ -71,7 +73,7 @@ def main():
 %prun main()
 
 ```
-Incidentally here is the output of the profiler
+Here is the output of the profiler
 
 
  1010556133 function calls in 1013.358 seconds
