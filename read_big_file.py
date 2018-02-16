@@ -1,6 +1,7 @@
 
 '''
-The code below was run in a Jupyter notebook on a windows 7 PC with 16Gb of RAM
+The code below was run in a Jupyter notebook on an i7 quad core windows PC 
+with 16MB of RAM. The input file was 24 Gbytes in size with approx 335 Million records
 '''
 
 from itertools import islice
