@@ -10,6 +10,7 @@ that we calculate.
 The data file is about 24 Gigabtyes long and holds approximately 335 Milion pipe separated records. The first 
 10 records are shown below:
 
+```
 18511|1|2587198|2004-03-31|0|100000|0|1.97|0.49988|100000||||
 18511|2|2587198|2004-06-30|0|160000|0|3.2|0.79669|60000|60|||
 18511|3|2587198|2004-09-30|0|160000|0|2.17|0.79279|0|0|||
@@ -21,13 +22,14 @@ The data file is about 24 Gigabtyes long and holds approximately 335 Milion pipe
 18511|4|2587940|2004-09-30|0|560000|0|0.96|0.50704|0|0|||
 18511|5|2587940|2005-03-31|0|0|0|0|0|-560000|-100|||14
 
+```
 Initially, the field of interest to us is the second one. This is a period ID and at the time of writing 
 can range between 1 and 56. I wanted a way to write out each record in the input file to a new output file 
-that contained the period ID as part of its filename. e.g issue1.txt, issue53.txt, issue54.txt and so on. Performance 
-is quite critical to us so, I wrote a C program to run on our HP OpenVMS Alpha. I'm not a C expert but was a 
-bit shocked to discover the program was taking about 54 minutes to run on a quiet system. Anyhow some time 
-later I started to get into Python and as we all know Python is slow isn't it, so there wasn't much point in 
-trying to rewrite my C code in Python and run it on my desktop PC was there? Well, at a loose end one day I 
+that contained the period ID as part of its filename. e.g period1.txt, period53.txt, period54.txt and so 
+on. Performance is quite critical to us so, I wrote a C program to run on our HP OpenVMS Alpha. I'm not a 
+C expert but was a bit shocked to discover the program was taking about 54 minutes to run on a quiet system. 
+Anyhow some time later I started to get into Python and as we all know Python is slow isn't it, so there wasn't 
+much point in trying to rewrite my C code in Python and run it on my desktop PC was there? Well, at a loose end one day I 
 decided to try and give it a go, more as a learning excercise for me rather that any expectation of producing
 something that would be fasetr than my C code - allbeit on a different platform. Needless to say I was amazed 
 when my python run came in at 1033 seconds elapsed time -that's just over 17 minutes or fully two thirds quicker
