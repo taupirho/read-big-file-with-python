@@ -1,4 +1,8 @@
 
+'''
+The code below was run in a Jupyter notebook on a windows 7 PC with 16Gb of RAM
+'''
+
 from itertools import islice
 from collections import defaultdict
 
