@@ -23,10 +23,11 @@ The data file is about 24 Gigabtyes long and holds approximately 335 Milion pipe
 18511|5|2587940|2005-03-31|0|0|0|0|0|-560000|-100|||14
 
 ```
-Initially, the field of interest to us is the second one. This is a period ID and at the time of writing 
-can range between 1 and 56. I wanted a way to write out each record in the input file to a new output file 
-that contained the period ID as part of its filename. e.g period1.txt, period53.txt, period54.txt and so 
-on. Performance is quite critical to us so, I wrote a C program to run on our HP OpenVMS Alpha. I'm not a 
+The second field in the above file can range between 1 and 56 and the goal was to split up the 
+original file so that all the records with the same value for the second field would be 
+grouped together in the same file. i.e we would end up with 56 separate files period1.txt, 
+period2.txt ... period56.txt each containing approximately 6 million records.
+Performance is quite critical to us so, I wrote a C program to run on our HP OpenVMS Alpha. I'm not a 
 C expert but was a bit shocked to discover the program was taking about 54 minutes to run on a quiet system. 
 Anyhow some time later I started to get into Python and as we all know Python is slow isn't it, so there wasn't 
 much point in trying to rewrite my C code in Python and run it on my desktop PC was there? Well, at a loose end one day I 
