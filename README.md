@@ -2,12 +2,12 @@
 A case study in reading a large (24GB) text file with python
 
 A lot of the work I do is dealing with large'ish data files from external data providers and 
-trying to shoehorn their data into our system. Once such file comprises company ownership data that
+trying to shoehorn their data into our system. One such file comprises company ownership data that
 we download from Standard & Poors CapitalIQ data service. We use the file to calculate free floats for stocks 
 and this in turn feeds in to whether or not the stock can become a member of various equity indexes 
 that we calculate.
 
-The data file is about 24 Gigabtyes long and holds approximately 335 Milion pipe separated records. The first 
+The data file is about 24 Gigabtyes big and holds approximately 335 Milion pipe separated records. The first 
 10 records are shown below:
 
 ```
