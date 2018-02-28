@@ -1,5 +1,5 @@
 # read-big-file-with-python
-Part 1 of a case study in reading a big (21GB) text file using C, Python, PYSPARK and Spark-Scala.
+The first of a three part case study in reading a big (21GB) text file using C, Python, PYSPARK and Spark-Scala.
 This part deals with a comparison between using a C and python program.
 
 A lot of the work I do is dealing with large'ish data files from external data providers and 
