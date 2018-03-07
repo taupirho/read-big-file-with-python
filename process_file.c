@@ -1,7 +1,7 @@
 /*
  * The original C file I used to process the big data file
- * run-time was approx 54 minutes to process a 24 Gbyte text file
- * containing 335 Million records
+ * run-time was approx 54 minutes to process a 21 GB text file
+ * containing approx 335 Million records
  * 
  *
  */
