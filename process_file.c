@@ -28,7 +28,7 @@ main(int argc,char **argv)
     char f1[15];
     char *lines;
     char tmp[100];
-    char outname[2];
+    char outname[20];
     maxfiles=56;
     FILE *files[100];
 
