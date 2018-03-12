@@ -28,9 +28,9 @@ The data file is about 21 Gigabtyes big and holds approximately 335 Million pipe
 The second field in the above file can range between 1 and 56 and the goal was to split up the 
 original file so that all the records with the same value for the second field would be 
 grouped together in the same file. i.e we would end up with 56 separate files period1.txt, 
-period2.txt ... period56.txt each containing approximately 6 million records.
-Performance is quite critical to us so, I wrote a C program to run on our HP OpenVMS Alpha. I'm not a 
-C expert but was a bit shocked to discover the program was taking about 54 minutes to run on a quiet system. 
+period2.txt ... period56.txt each containing approximately 6 million records. Performance is quite critical 
+so, I wrote a C program to run on our HP OpenVMS Alpha server (consisting of dual 1.33 GHz itanium processors 
+and 32 GB Ram). I'm not a C expert but was a bit shocked to discover the program was taking about 54 minutes to run on a quiet system. 
 Anyhow some time later I started to get into Python and as we all know Python is slow isn't it, so there wasn't 
 much point in trying to rewrite my C code in Python and run it on my desktop PC was there? Well, at a loose end one day I 
 decided to try and give it a go, more as a learning excercise for me rather that any expectation of producing
