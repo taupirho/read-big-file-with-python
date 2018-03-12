@@ -40,5 +40,5 @@ than my C program. I know we're not quite comparing like with like but make of i
 
 ***PS. Out of interest I downloaded a copy of visual studio and coded a simplified version of my 
 C program - just using fgets to read the file line by line and sscanf to get at the second field. I ran the program
-on the sdame data set and on the same PC as my python program ran on and it took just shy of 1 hour to process
-the file***
+on the same data set and on the same PC as my python program ran on and it took just shy of 1 hour to process
+the file. Replacing the fgets and sscanf calls with a single call to fscanf made no difference to the run-time either***
