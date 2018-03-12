@@ -37,3 +37,8 @@ decided to try and give it a go, more as a learning excercise for me rather that
 something that would be fasetr than my C code - allbeit on a different platform. Needless to say I was amazed 
 when my python run came in at 1033 seconds elapsed time -that's just over 17 minutes or fully two thirds quicker
 than my C program. I know we're not quite comparing like with like but make of it what you want. 
+
+***PS. Out of interest I downloaded a copy of visual studio and coded a simplified version of my 
+C program - just using fgets to read the file line by line and sscanf to get at the second field. I ran the program
+on the sdame data set and on the same PC as my python program ran on and it took just shy of 1 hour to process
+the file***
