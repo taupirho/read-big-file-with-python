@@ -31,7 +31,7 @@ int main ()
 	/* pre-open all our ouput files */
 	for (int i = 1; i <= 56; i++)
 	{
-		sprintf(outname, "d:\\tmp\\iholding\\myfiles\\issue%d.txt", i);
+		sprintf(outname, "d:\\tmp\\iholding\\myfiles\\period%d.txt", i);
 		files[i] = fopen(outname, "w");
 	}
 
