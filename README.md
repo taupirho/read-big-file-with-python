@@ -1,6 +1,6 @@
 # read-big-file-with-python
 The first in what was originally going to be a three part case study ( since extended to 5 parts) in reading a big (21GB) text file 
-using C, Python, PYSPARK, Spark-Scala abd Athena/Glue. You can see the other parts here:
+using C, Python, PYSPARK, Spark-Scala and Athena/Glue. You can see the other parts here:
 
 [part2](https://github.com/taupirho/read-big-file-with-spark-python)
 <br>
