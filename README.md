@@ -1,5 +1,11 @@
 # read-big-file-with-python
-The first of a three part case study in reading a big (21GB) text file using C, Python, PYSPARK and Spark-Scala.
+The first in what was originally going to be a three part case study ( since extended to 5 parts) in reading a big (21GB) text file 
+using C, Python, PYSPARK and Spark-Scala. You can see the other parts here:
+
+[part2](https://github.com/taupirho/read-big-file-with-spark-python)
+[part3](https://github.com/taupirho/read-big-file-with-spark-scala)
+[part4](https://github.com/taupirho/read-big-file-with-amazon-emr)
+[part5](https://github.com/taupirho/read-big-file-aws-athena-glue)
 
 This part deals with a comparison between using a C and python program.
 
@@ -9,7 +15,7 @@ we download from Standard & Poors CapitalIQ data service. We use the file to cal
 and this in turn feeds in to whether or not the stock can become a member of various equity indexes 
 that we calculate.
 
-The data file is about 21 Gigabtyes big and holds approximately 335 Million pipe separated records. The first 
+The data file is about 21 Gigabtyes big and holds approximately 366 Million pipe separated records. The first 
 10 records are shown below:
 
 ```
